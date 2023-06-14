@@ -1,8 +1,8 @@
 version: "3.7"
 services:
-  microproyectos:
-    container_name: microproyectos
-    image: microproyectos:latest
+  microproyectos-pruebas:
+    container_name: microproyectos-pruebas
+    image: microproyectos-pruebas:latest
     build:
       context: .
     ports:
@@ -13,7 +13,7 @@ services:
     networks:
       - ase-acad
     
-  balanceador:
+  balanceador_proyectos:
     container_name: balanceador_proyectos
     image: balanceador_proyectos:latest
     build:
